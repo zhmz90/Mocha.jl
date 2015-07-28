@@ -1,0 +1,132 @@
+Configuring Mocha...
+ * CUDA       disabled by default
+ * Native Ext enabled (MOCHA_USE_NATIVE_EXT environment variable detected)
+Mocha configured, continue loading module...
+Loading native extension libmochaext.so...
+Native extension loaded
+28-Jul 08:06:13:INFO:root:Constructing net MNIST-train on CPUBackend...
+28-Jul 08:06:13:INFO:root:Topological sorting 8 layers...
+28-Jul 08:06:13:INFO:root:Setup layers...
+28-Jul 08:06:14:INFO:root:Network constructed!
+28-Jul 08:06:14:INFO:root:Constructing net MNIST-test on CPUBackend...
+28-Jul 08:06:14:INFO:root:Topological sorting 8 layers...
+28-Jul 08:06:14:INFO:root:Setup layers...
+28-Jul 08:06:14:DEBUG:root:ConvolutionLayer(conv1): sharing filters and bias
+28-Jul 08:06:14:DEBUG:root:ConvolutionLayer(conv2): sharing filters and bias
+28-Jul 08:06:14:DEBUG:root:InnerProductLayer(ip1): sharing weights and bias
+28-Jul 08:06:14:DEBUG:root:InnerProductLayer(ip2): sharing weights and bias
+28-Jul 08:06:14:INFO:root:Network constructed!
+28-Jul 08:06:15:DEBUG:root:Checking network topology for back-propagation
+28-Jul 08:06:15:INFO:root:Loading existing model from snapshots-cpu/snapshot-005000.jld
+28-Jul 08:06:16:DEBUG:root:Loading parameters for layer conv1
+28-Jul 08:06:16:DEBUG:root:Loading parameters for layer conv2
+28-Jul 08:06:16:DEBUG:root:Loading parameters for layer ip1
+28-Jul 08:06:16:DEBUG:root:Loading parameters for layer ip2
+28-Jul 08:06:16:DEBUG:root:Init network MNIST-train
+28-Jul 08:06:17:DEBUG:root:Initializing coffee breaks
+28-Jul 08:06:17:INFO:root:Merging existing coffee lounge statistics in snapshots-cpu/statistics.jld
+28-Jul 08:06:17:INFO:root:Snapshot directory snapshots-cpu already exists
+28-Jul 08:06:17:DEBUG:root:Init network MNIST-test
+28-Jul 08:06:17:INFO:root:ITER = 005000:: TRAIN obj-val = 0.00392356
+28-Jul 08:06:17:INFO:root:Saving snapshot to snapshot-005000.jld...
+28-Jul 08:06:17:WARNING:root:Overwriting snapshots-cpu/snapshot-005000.jld...
+28-Jul 08:06:18:DEBUG:root:Saving parameters for layer conv1
+28-Jul 08:06:18:DEBUG:root:Saving parameters for layer conv2
+28-Jul 08:06:18:DEBUG:root:Saving parameters for layer ip1
+28-Jul 08:06:18:DEBUG:root:Saving parameters for layer ip2
+28-Jul 08:06:26:INFO:root:
+28-Jul 08:06:26:INFO:root:## Performance on Validation Set after 5000 iterations
+28-Jul 08:06:26:INFO:root:---------------------------------------------------------
+28-Jul 08:06:26:INFO:root:  Accuracy (avg over 10000) = 98.8400%
+28-Jul 08:06:26:INFO:root:---------------------------------------------------------
+28-Jul 08:06:26:INFO:root:
+28-Jul 08:06:27:DEBUG:root:Entering solver loop
+28-Jul 08:06:36:INFO:root:ITER = 005100:: TRAIN obj-val = 0.00719815
+28-Jul 08:06:45:INFO:root:ITER = 005200:: TRAIN obj-val = 0.00786558
+28-Jul 08:06:55:INFO:root:ITER = 005300:: TRAIN obj-val = 0.00498868
+28-Jul 08:07:06:INFO:root:ITER = 005400:: TRAIN obj-val = 0.01453690
+28-Jul 08:07:16:INFO:root:ITER = 005500:: TRAIN obj-val = 0.00628637
+28-Jul 08:07:26:INFO:root:ITER = 005600:: TRAIN obj-val = 0.00912938
+28-Jul 08:07:35:INFO:root:ITER = 005700:: TRAIN obj-val = 0.00904519
+28-Jul 08:07:45:INFO:root:ITER = 005800:: TRAIN obj-val = 0.03489932
+28-Jul 08:07:55:INFO:root:ITER = 005900:: TRAIN obj-val = 0.01785495
+28-Jul 08:08:05:INFO:root:ITER = 006000:: TRAIN obj-val = 0.01372562
+28-Jul 08:08:11:INFO:root:
+28-Jul 08:08:11:INFO:root:## Performance on Validation Set after 6000 iterations
+28-Jul 08:08:11:INFO:root:---------------------------------------------------------
+28-Jul 08:08:11:INFO:root:  Accuracy (avg over 10000) = 98.9100%
+28-Jul 08:08:11:INFO:root:---------------------------------------------------------
+28-Jul 08:08:11:INFO:root:
+28-Jul 08:08:21:INFO:root:ITER = 006100:: TRAIN obj-val = 0.00328888
+28-Jul 08:08:30:INFO:root:ITER = 006200:: TRAIN obj-val = 0.00408018
+28-Jul 08:08:39:INFO:root:ITER = 006300:: TRAIN obj-val = 0.05138099
+28-Jul 08:08:49:INFO:root:ITER = 006400:: TRAIN obj-val = 0.00499486
+28-Jul 08:09:00:INFO:root:ITER = 006500:: TRAIN obj-val = 0.00238118
+28-Jul 08:09:10:INFO:root:ITER = 006600:: TRAIN obj-val = 0.01995302
+28-Jul 08:09:20:INFO:root:ITER = 006700:: TRAIN obj-val = 0.01177096
+28-Jul 08:09:31:INFO:root:ITER = 006800:: TRAIN obj-val = 0.00493293
+28-Jul 08:09:43:INFO:root:ITER = 006900:: TRAIN obj-val = 0.02559792
+28-Jul 08:09:52:INFO:root:ITER = 007000:: TRAIN obj-val = 0.01753647
+28-Jul 08:09:58:INFO:root:
+28-Jul 08:09:58:INFO:root:## Performance on Validation Set after 7000 iterations
+28-Jul 08:09:58:INFO:root:---------------------------------------------------------
+28-Jul 08:09:58:INFO:root:  Accuracy (avg over 10000) = 99.0000%
+28-Jul 08:09:58:INFO:root:---------------------------------------------------------
+28-Jul 08:09:58:INFO:root:
+28-Jul 08:10:09:INFO:root:ITER = 007100:: TRAIN obj-val = 0.00741704
+28-Jul 08:10:20:INFO:root:ITER = 007200:: TRAIN obj-val = 0.01155342
+28-Jul 08:10:29:INFO:root:ITER = 007300:: TRAIN obj-val = 0.11369186
+28-Jul 08:10:38:INFO:root:ITER = 007400:: TRAIN obj-val = 0.04414017
+28-Jul 08:10:46:INFO:root:ITER = 007500:: TRAIN obj-val = 0.02127355
+28-Jul 08:10:54:INFO:root:ITER = 007600:: TRAIN obj-val = 0.00966287
+28-Jul 08:11:03:INFO:root:ITER = 007700:: TRAIN obj-val = 0.02160337
+28-Jul 08:11:12:INFO:root:ITER = 007800:: TRAIN obj-val = 0.08752087
+28-Jul 08:11:21:INFO:root:ITER = 007900:: TRAIN obj-val = 0.00274006
+28-Jul 08:11:30:INFO:root:ITER = 008000:: TRAIN obj-val = 0.00218541
+28-Jul 08:11:34:INFO:root:
+28-Jul 08:11:34:INFO:root:## Performance on Validation Set after 8000 iterations
+28-Jul 08:11:34:INFO:root:---------------------------------------------------------
+28-Jul 08:11:34:INFO:root:  Accuracy (avg over 10000) = 98.9700%
+28-Jul 08:11:34:INFO:root:---------------------------------------------------------
+28-Jul 08:11:34:INFO:root:
+28-Jul 08:11:43:INFO:root:ITER = 008100:: TRAIN obj-val = 0.00740661
+28-Jul 08:11:51:INFO:root:ITER = 008200:: TRAIN obj-val = 0.06022769
+28-Jul 08:12:00:INFO:root:ITER = 008300:: TRAIN obj-val = 0.01237611
+28-Jul 08:12:08:INFO:root:ITER = 008400:: TRAIN obj-val = 0.00958908
+28-Jul 08:12:17:INFO:root:ITER = 008500:: TRAIN obj-val = 0.00323056
+28-Jul 08:12:25:INFO:root:ITER = 008600:: TRAIN obj-val = 0.01622026
+28-Jul 08:12:34:INFO:root:ITER = 008700:: TRAIN obj-val = 0.01196416
+28-Jul 08:12:42:INFO:root:ITER = 008800:: TRAIN obj-val = 0.03156805
+28-Jul 08:12:51:INFO:root:ITER = 008900:: TRAIN obj-val = 0.01366954
+28-Jul 08:12:59:INFO:root:ITER = 009000:: TRAIN obj-val = 0.01346276
+28-Jul 08:13:03:INFO:root:
+28-Jul 08:13:03:INFO:root:## Performance on Validation Set after 9000 iterations
+28-Jul 08:13:03:INFO:root:---------------------------------------------------------
+28-Jul 08:13:03:INFO:root:  Accuracy (avg over 10000) = 98.9900%
+28-Jul 08:13:03:INFO:root:---------------------------------------------------------
+28-Jul 08:13:03:INFO:root:
+28-Jul 08:13:12:INFO:root:ITER = 009100:: TRAIN obj-val = 0.04335862
+28-Jul 08:13:21:INFO:root:ITER = 009200:: TRAIN obj-val = 0.03744395
+28-Jul 08:13:30:INFO:root:ITER = 009300:: TRAIN obj-val = 0.00386693
+28-Jul 08:13:38:INFO:root:ITER = 009400:: TRAIN obj-val = 0.01218551
+28-Jul 08:13:46:INFO:root:ITER = 009500:: TRAIN obj-val = 0.00220431
+28-Jul 08:13:55:INFO:root:ITER = 009600:: TRAIN obj-val = 0.00401851
+28-Jul 08:14:03:INFO:root:ITER = 009700:: TRAIN obj-val = 0.00478497
+28-Jul 08:14:11:INFO:root:ITER = 009800:: TRAIN obj-val = 0.01882547
+28-Jul 08:14:20:INFO:root:ITER = 009900:: TRAIN obj-val = 0.00324991
+28-Jul 08:14:28:INFO:root:ITER = 010000:: TRAIN obj-val = 0.00122315
+28-Jul 08:14:28:INFO:root:Saving snapshot to snapshot-010000.jld...
+28-Jul 08:14:28:DEBUG:root:Saving parameters for layer conv1
+28-Jul 08:14:28:DEBUG:root:Saving parameters for layer conv2
+28-Jul 08:14:28:DEBUG:root:Saving parameters for layer ip1
+28-Jul 08:14:28:DEBUG:root:Saving parameters for layer ip2
+28-Jul 08:14:32:INFO:root:
+28-Jul 08:14:32:INFO:root:## Performance on Validation Set after 10000 iterations
+28-Jul 08:14:32:INFO:root:---------------------------------------------------------
+28-Jul 08:14:32:INFO:root:  Accuracy (avg over 10000) = 99.0200%
+28-Jul 08:14:32:INFO:root:---------------------------------------------------------
+28-Jul 08:14:32:INFO:root:
+28-Jul 08:14:33:DEBUG:root:Destroying network MNIST-train
+28-Jul 08:14:33:INFO:root:AsyncHDF5DataLayer: Stopping IO task...
+28-Jul 08:14:33:INFO:root:AsyncHDF5DataLayer: IO Task reaching the end...
+28-Jul 08:14:33:DEBUG:root:Destroying network MNIST-test

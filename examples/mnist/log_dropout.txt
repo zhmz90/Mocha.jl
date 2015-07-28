@@ -1,0 +1,715 @@
+Configuring Mocha...
+ * CUDA       disabled by default
+ * Native Ext enabled (MOCHA_USE_NATIVE_EXT environment variable detected)
+Mocha configured, continue loading module...
+Loading native extension libmochaext.so...
+Native extension loaded
+28-Jul 08:21:37:INFO:root:Constructing net MNIST-train on CPUBackend...
+28-Jul 08:21:37:INFO:root:Topological sorting 8 layers...
+28-Jul 08:21:37:INFO:root:Setup layers...
+28-Jul 08:21:38:INFO:root:Network constructed!
+28-Jul 08:21:38:INFO:root:Constructing net MNIST-test on CPUBackend...
+28-Jul 08:21:38:INFO:root:Topological sorting 5 layers...
+28-Jul 08:21:38:INFO:root:Setup layers...
+28-Jul 08:21:38:DEBUG:root:InnerProductLayer(fc1): sharing weights and bias
+28-Jul 08:21:38:DEBUG:root:InnerProductLayer(fc2): sharing weights and bias
+28-Jul 08:21:38:DEBUG:root:InnerProductLayer(out): sharing weights and bias
+28-Jul 08:21:38:INFO:root:Network constructed!
+28-Jul 08:21:39:DEBUG:root:Checking network topology for back-propagation
+28-Jul 08:21:39:DEBUG:root:Init network MNIST-train
+28-Jul 08:21:39:DEBUG:root:Init parameter weight for layer fc1
+28-Jul 08:21:39:DEBUG:root:Init parameter bias for layer fc1
+28-Jul 08:21:39:DEBUG:root:Init parameter weight for layer fc2
+28-Jul 08:21:39:DEBUG:root:Init parameter bias for layer fc2
+28-Jul 08:21:39:DEBUG:root:Init parameter weight for layer out
+28-Jul 08:21:39:DEBUG:root:Init parameter bias for layer out
+28-Jul 08:21:40:DEBUG:root:Initializing coffee breaks
+28-Jul 08:21:40:INFO:root:Snapshot directory snapshots_dropout_fc already exists
+28-Jul 08:21:40:DEBUG:root:Init network MNIST-test
+28-Jul 08:21:40:INFO:root:ITER = 000000:: TRAIN obj-val = 2.30258512
+28-Jul 08:21:40:INFO:root:Saving snapshot to snapshot-000000.jld...
+28-Jul 08:21:40:DEBUG:root:Saving parameters for layer fc1
+28-Jul 08:21:40:DEBUG:root:Saving parameters for layer fc2
+28-Jul 08:21:40:DEBUG:root:Saving parameters for layer out
+28-Jul 08:21:49:INFO:root:
+28-Jul 08:21:49:INFO:root:## Performance on Validation Set after 0 iterations
+28-Jul 08:21:49:INFO:root:---------------------------------------------------------
+28-Jul 08:21:49:INFO:root:  Accuracy (avg over 10000) = 9.8000%
+28-Jul 08:21:49:INFO:root:---------------------------------------------------------
+28-Jul 08:21:49:INFO:root:
+28-Jul 08:21:50:DEBUG:root:Entering solver loop
+28-Jul 08:22:12:INFO:root:ITER = 000100:: TRAIN obj-val = 1.16177177
+28-Jul 08:22:34:INFO:root:ITER = 000200:: TRAIN obj-val = 0.57011747
+28-Jul 08:22:55:INFO:root:ITER = 000300:: TRAIN obj-val = 0.47909015
+28-Jul 08:23:16:INFO:root:ITER = 000400:: TRAIN obj-val = 0.29911506
+28-Jul 08:23:37:INFO:root:ITER = 000500:: TRAIN obj-val = 0.32370362
+28-Jul 08:23:59:INFO:root:ITER = 000600:: TRAIN obj-val = 0.34692731
+28-Jul 08:24:08:INFO:root:
+28-Jul 08:24:08:INFO:root:## Performance on Validation Set after 600 iterations
+28-Jul 08:24:08:INFO:root:---------------------------------------------------------
+28-Jul 08:24:08:INFO:root:  Accuracy (avg over 10000) = 94.0200%
+28-Jul 08:24:08:INFO:root:---------------------------------------------------------
+28-Jul 08:24:08:INFO:root:
+28-Jul 08:24:29:INFO:root:ITER = 000700:: TRAIN obj-val = 0.30151749
+28-Jul 08:24:51:INFO:root:ITER = 000800:: TRAIN obj-val = 0.17157492
+28-Jul 08:25:13:INFO:root:ITER = 000900:: TRAIN obj-val = 0.30697528
+28-Jul 08:25:35:INFO:root:ITER = 001000:: TRAIN obj-val = 0.15074091
+28-Jul 08:25:57:INFO:root:ITER = 001100:: TRAIN obj-val = 0.12242522
+28-Jul 08:26:19:INFO:root:ITER = 001200:: TRAIN obj-val = 0.20662294
+28-Jul 08:26:29:INFO:root:
+28-Jul 08:26:29:INFO:root:## Performance on Validation Set after 1200 iterations
+28-Jul 08:26:29:INFO:root:---------------------------------------------------------
+28-Jul 08:26:29:INFO:root:  Accuracy (avg over 10000) = 96.2500%
+28-Jul 08:26:29:INFO:root:---------------------------------------------------------
+28-Jul 08:26:29:INFO:root:
+28-Jul 08:26:51:INFO:root:ITER = 001300:: TRAIN obj-val = 0.16397832
+28-Jul 08:27:13:INFO:root:ITER = 001400:: TRAIN obj-val = 0.09380604
+28-Jul 08:27:35:INFO:root:ITER = 001500:: TRAIN obj-val = 0.36546850
+28-Jul 08:27:57:INFO:root:ITER = 001600:: TRAIN obj-val = 0.12972414
+28-Jul 08:28:13:INFO:root:ITER = 001700:: TRAIN obj-val = 0.09651411
+28-Jul 08:28:29:INFO:root:ITER = 001800:: TRAIN obj-val = 0.18474990
+28-Jul 08:28:36:INFO:root:
+28-Jul 08:28:36:INFO:root:## Performance on Validation Set after 1800 iterations
+28-Jul 08:28:36:INFO:root:---------------------------------------------------------
+28-Jul 08:28:36:INFO:root:  Accuracy (avg over 10000) = 96.7900%
+28-Jul 08:28:36:INFO:root:---------------------------------------------------------
+28-Jul 08:28:36:INFO:root:
+28-Jul 08:28:53:INFO:root:ITER = 001900:: TRAIN obj-val = 0.14258476
+28-Jul 08:29:09:INFO:root:ITER = 002000:: TRAIN obj-val = 0.09289807
+28-Jul 08:29:25:INFO:root:ITER = 002100:: TRAIN obj-val = 0.20195128
+28-Jul 08:29:40:INFO:root:ITER = 002200:: TRAIN obj-val = 0.11972430
+28-Jul 08:29:57:INFO:root:ITER = 002300:: TRAIN obj-val = 0.06898320
+28-Jul 08:30:13:INFO:root:ITER = 002400:: TRAIN obj-val = 0.14966334
+28-Jul 08:30:20:INFO:root:
+28-Jul 08:30:20:INFO:root:## Performance on Validation Set after 2400 iterations
+28-Jul 08:30:20:INFO:root:---------------------------------------------------------
+28-Jul 08:30:20:INFO:root:  Accuracy (avg over 10000) = 97.4100%
+28-Jul 08:30:20:INFO:root:---------------------------------------------------------
+28-Jul 08:30:20:INFO:root:
+28-Jul 08:30:36:INFO:root:ITER = 002500:: TRAIN obj-val = 0.06430753
+28-Jul 08:30:51:INFO:root:ITER = 002600:: TRAIN obj-val = 0.08406287
+28-Jul 08:31:07:INFO:root:ITER = 002700:: TRAIN obj-val = 0.18303607
+28-Jul 08:31:23:INFO:root:ITER = 002800:: TRAIN obj-val = 0.06074228
+28-Jul 08:31:38:INFO:root:ITER = 002900:: TRAIN obj-val = 0.11179450
+28-Jul 08:31:54:INFO:root:ITER = 003000:: TRAIN obj-val = 0.12125221
+28-Jul 08:32:01:INFO:root:
+28-Jul 08:32:01:INFO:root:## Performance on Validation Set after 3000 iterations
+28-Jul 08:32:01:INFO:root:---------------------------------------------------------
+28-Jul 08:32:01:INFO:root:  Accuracy (avg over 10000) = 97.4200%
+28-Jul 08:32:01:INFO:root:---------------------------------------------------------
+28-Jul 08:32:01:INFO:root:
+28-Jul 08:32:16:INFO:root:ITER = 003100:: TRAIN obj-val = 0.09206638
+28-Jul 08:32:32:INFO:root:ITER = 003200:: TRAIN obj-val = 0.13297246
+28-Jul 08:32:48:INFO:root:ITER = 003300:: TRAIN obj-val = 0.21819602
+28-Jul 08:33:03:INFO:root:ITER = 003400:: TRAIN obj-val = 0.14171496
+28-Jul 08:33:19:INFO:root:ITER = 003500:: TRAIN obj-val = 0.05589608
+28-Jul 08:33:35:INFO:root:ITER = 003600:: TRAIN obj-val = 0.10246637
+28-Jul 08:33:42:INFO:root:
+28-Jul 08:33:42:INFO:root:## Performance on Validation Set after 3600 iterations
+28-Jul 08:33:42:INFO:root:---------------------------------------------------------
+28-Jul 08:33:42:INFO:root:  Accuracy (avg over 10000) = 97.6700%
+28-Jul 08:33:42:INFO:root:---------------------------------------------------------
+28-Jul 08:33:42:INFO:root:
+28-Jul 08:33:57:INFO:root:ITER = 003700:: TRAIN obj-val = 0.04020130
+28-Jul 08:34:13:INFO:root:ITER = 003800:: TRAIN obj-val = 0.08700141
+28-Jul 08:34:28:INFO:root:ITER = 003900:: TRAIN obj-val = 0.14865139
+28-Jul 08:34:44:INFO:root:ITER = 004000:: TRAIN obj-val = 0.06290199
+28-Jul 08:35:00:INFO:root:ITER = 004100:: TRAIN obj-val = 0.07661560
+28-Jul 08:35:16:INFO:root:ITER = 004200:: TRAIN obj-val = 0.08127888
+28-Jul 08:35:23:INFO:root:
+28-Jul 08:35:23:INFO:root:## Performance on Validation Set after 4200 iterations
+28-Jul 08:35:23:INFO:root:---------------------------------------------------------
+28-Jul 08:35:23:INFO:root:  Accuracy (avg over 10000) = 98.0000%
+28-Jul 08:35:23:INFO:root:---------------------------------------------------------
+28-Jul 08:35:23:INFO:root:
+28-Jul 08:35:38:INFO:root:ITER = 004300:: TRAIN obj-val = 0.02752404
+28-Jul 08:35:54:INFO:root:ITER = 004400:: TRAIN obj-val = 0.12558630
+28-Jul 08:36:09:INFO:root:ITER = 004500:: TRAIN obj-val = 0.18175553
+28-Jul 08:36:25:INFO:root:ITER = 004600:: TRAIN obj-val = 0.07597882
+28-Jul 08:36:41:INFO:root:ITER = 004700:: TRAIN obj-val = 0.05581061
+28-Jul 08:36:56:INFO:root:ITER = 004800:: TRAIN obj-val = 0.14318331
+28-Jul 08:37:03:INFO:root:
+28-Jul 08:37:03:INFO:root:## Performance on Validation Set after 4800 iterations
+28-Jul 08:37:03:INFO:root:---------------------------------------------------------
+28-Jul 08:37:03:INFO:root:  Accuracy (avg over 10000) = 97.9500%
+28-Jul 08:37:03:INFO:root:---------------------------------------------------------
+28-Jul 08:37:03:INFO:root:
+28-Jul 08:37:19:INFO:root:ITER = 004900:: TRAIN obj-val = 0.05086153
+28-Jul 08:37:35:INFO:root:ITER = 005000:: TRAIN obj-val = 0.08769188
+28-Jul 08:37:35:INFO:root:Saving snapshot to snapshot-005000.jld...
+28-Jul 08:37:35:DEBUG:root:Saving parameters for layer fc1
+28-Jul 08:37:35:DEBUG:root:Saving parameters for layer fc2
+28-Jul 08:37:35:DEBUG:root:Saving parameters for layer out
+28-Jul 08:37:58:INFO:root:ITER = 005100:: TRAIN obj-val = 0.16698308
+28-Jul 08:38:20:INFO:root:ITER = 005200:: TRAIN obj-val = 0.03071774
+28-Jul 08:38:43:INFO:root:ITER = 005300:: TRAIN obj-val = 0.07179924
+28-Jul 08:38:58:INFO:root:ITER = 005400:: TRAIN obj-val = 0.10297211
+28-Jul 08:39:06:INFO:root:
+28-Jul 08:39:06:INFO:root:## Performance on Validation Set after 5400 iterations
+28-Jul 08:39:06:INFO:root:---------------------------------------------------------
+28-Jul 08:39:06:INFO:root:  Accuracy (avg over 10000) = 98.0800%
+28-Jul 08:39:06:INFO:root:---------------------------------------------------------
+28-Jul 08:39:06:INFO:root:
+28-Jul 08:39:21:INFO:root:ITER = 005500:: TRAIN obj-val = 0.01075725
+28-Jul 08:39:37:INFO:root:ITER = 005600:: TRAIN obj-val = 0.03618050
+28-Jul 08:39:52:INFO:root:ITER = 005700:: TRAIN obj-val = 0.09904459
+28-Jul 08:40:08:INFO:root:ITER = 005800:: TRAIN obj-val = 0.07639097
+28-Jul 08:40:23:INFO:root:ITER = 005900:: TRAIN obj-val = 0.04592162
+28-Jul 08:40:39:INFO:root:ITER = 006000:: TRAIN obj-val = 0.08402846
+28-Jul 08:40:46:INFO:root:
+28-Jul 08:40:46:INFO:root:## Performance on Validation Set after 6000 iterations
+28-Jul 08:40:46:INFO:root:---------------------------------------------------------
+28-Jul 08:40:46:INFO:root:  Accuracy (avg over 10000) = 98.1700%
+28-Jul 08:40:46:INFO:root:---------------------------------------------------------
+28-Jul 08:40:46:INFO:root:
+28-Jul 08:41:01:INFO:root:ITER = 006100:: TRAIN obj-val = 0.10873906
+28-Jul 08:41:17:INFO:root:ITER = 006200:: TRAIN obj-val = 0.03424690
+28-Jul 08:41:32:INFO:root:ITER = 006300:: TRAIN obj-val = 0.11216581
+28-Jul 08:41:48:INFO:root:ITER = 006400:: TRAIN obj-val = 0.10984923
+28-Jul 08:42:03:INFO:root:ITER = 006500:: TRAIN obj-val = 0.04305079
+28-Jul 08:42:19:INFO:root:ITER = 006600:: TRAIN obj-val = 0.07876933
+28-Jul 08:42:26:INFO:root:
+28-Jul 08:42:26:INFO:root:## Performance on Validation Set after 6600 iterations
+28-Jul 08:42:26:INFO:root:---------------------------------------------------------
+28-Jul 08:42:26:INFO:root:  Accuracy (avg over 10000) = 98.2700%
+28-Jul 08:42:26:INFO:root:---------------------------------------------------------
+28-Jul 08:42:26:INFO:root:
+28-Jul 08:42:41:INFO:root:ITER = 006700:: TRAIN obj-val = 0.02803737
+28-Jul 08:42:57:INFO:root:ITER = 006800:: TRAIN obj-val = 0.01803665
+28-Jul 08:43:12:INFO:root:ITER = 006900:: TRAIN obj-val = 0.14283755
+28-Jul 08:43:28:INFO:root:ITER = 007000:: TRAIN obj-val = 0.07168963
+28-Jul 08:43:43:INFO:root:ITER = 007100:: TRAIN obj-val = 0.04992213
+28-Jul 08:43:59:INFO:root:ITER = 007200:: TRAIN obj-val = 0.05420017
+28-Jul 08:44:06:INFO:root:
+28-Jul 08:44:06:INFO:root:## Performance on Validation Set after 7200 iterations
+28-Jul 08:44:06:INFO:root:---------------------------------------------------------
+28-Jul 08:44:06:INFO:root:  Accuracy (avg over 10000) = 98.3000%
+28-Jul 08:44:06:INFO:root:---------------------------------------------------------
+28-Jul 08:44:06:INFO:root:
+28-Jul 08:44:21:INFO:root:ITER = 007300:: TRAIN obj-val = 0.06159317
+28-Jul 08:44:37:INFO:root:ITER = 007400:: TRAIN obj-val = 0.03999324
+28-Jul 08:44:52:INFO:root:ITER = 007500:: TRAIN obj-val = 0.12724613
+28-Jul 08:45:08:INFO:root:ITER = 007600:: TRAIN obj-val = 0.03305690
+28-Jul 08:45:24:INFO:root:ITER = 007700:: TRAIN obj-val = 0.03346817
+28-Jul 08:45:39:INFO:root:ITER = 007800:: TRAIN obj-val = 0.06067350
+28-Jul 08:45:46:INFO:root:
+28-Jul 08:45:46:INFO:root:## Performance on Validation Set after 7800 iterations
+28-Jul 08:45:46:INFO:root:---------------------------------------------------------
+28-Jul 08:45:46:INFO:root:  Accuracy (avg over 10000) = 98.3200%
+28-Jul 08:45:46:INFO:root:---------------------------------------------------------
+28-Jul 08:45:46:INFO:root:
+28-Jul 08:46:02:INFO:root:ITER = 007900:: TRAIN obj-val = 0.00592612
+28-Jul 08:46:17:INFO:root:ITER = 008000:: TRAIN obj-val = 0.04619521
+28-Jul 08:46:33:INFO:root:ITER = 008100:: TRAIN obj-val = 0.13571100
+28-Jul 08:46:48:INFO:root:ITER = 008200:: TRAIN obj-val = 0.06179925
+28-Jul 08:47:04:INFO:root:ITER = 008300:: TRAIN obj-val = 0.03160438
+28-Jul 08:47:19:INFO:root:ITER = 008400:: TRAIN obj-val = 0.14753114
+28-Jul 08:47:26:INFO:root:
+28-Jul 08:47:26:INFO:root:## Performance on Validation Set after 8400 iterations
+28-Jul 08:47:26:INFO:root:---------------------------------------------------------
+28-Jul 08:47:26:INFO:root:  Accuracy (avg over 10000) = 98.4600%
+28-Jul 08:47:26:INFO:root:---------------------------------------------------------
+28-Jul 08:47:26:INFO:root:
+28-Jul 08:47:41:INFO:root:ITER = 008500:: TRAIN obj-val = 0.02153021
+28-Jul 08:47:57:INFO:root:ITER = 008600:: TRAIN obj-val = 0.02862370
+28-Jul 08:48:12:INFO:root:ITER = 008700:: TRAIN obj-val = 0.06425018
+28-Jul 08:48:27:INFO:root:ITER = 008800:: TRAIN obj-val = 0.05534039
+28-Jul 08:48:43:INFO:root:ITER = 008900:: TRAIN obj-val = 0.05197607
+28-Jul 08:48:58:INFO:root:ITER = 009000:: TRAIN obj-val = 0.06028894
+28-Jul 08:49:05:INFO:root:
+28-Jul 08:49:05:INFO:root:## Performance on Validation Set after 9000 iterations
+28-Jul 08:49:05:INFO:root:---------------------------------------------------------
+28-Jul 08:49:05:INFO:root:  Accuracy (avg over 10000) = 98.3100%
+28-Jul 08:49:05:INFO:root:---------------------------------------------------------
+28-Jul 08:49:05:INFO:root:
+28-Jul 08:49:20:INFO:root:ITER = 009100:: TRAIN obj-val = 0.03373319
+28-Jul 08:49:35:INFO:root:ITER = 009200:: TRAIN obj-val = 0.05463068
+28-Jul 08:49:50:INFO:root:ITER = 009300:: TRAIN obj-val = 0.06328866
+28-Jul 08:50:05:INFO:root:ITER = 009400:: TRAIN obj-val = 0.04907995
+28-Jul 08:50:20:INFO:root:ITER = 009500:: TRAIN obj-val = 0.03454101
+28-Jul 08:50:35:INFO:root:ITER = 009600:: TRAIN obj-val = 0.04226824
+28-Jul 08:50:42:INFO:root:
+28-Jul 08:50:42:INFO:root:## Performance on Validation Set after 9600 iterations
+28-Jul 08:50:42:INFO:root:---------------------------------------------------------
+28-Jul 08:50:42:INFO:root:  Accuracy (avg over 10000) = 98.4100%
+28-Jul 08:50:42:INFO:root:---------------------------------------------------------
+28-Jul 08:50:42:INFO:root:
+28-Jul 08:50:58:INFO:root:ITER = 009700:: TRAIN obj-val = 0.03241631
+28-Jul 08:51:13:INFO:root:ITER = 009800:: TRAIN obj-val = 0.01870377
+28-Jul 08:51:28:INFO:root:ITER = 009900:: TRAIN obj-val = 0.13114172
+28-Jul 08:51:44:INFO:root:ITER = 010000:: TRAIN obj-val = 0.03365178
+28-Jul 08:51:44:INFO:root:Saving snapshot to snapshot-010000.jld...
+28-Jul 08:51:44:DEBUG:root:Saving parameters for layer fc1
+28-Jul 08:51:44:DEBUG:root:Saving parameters for layer fc2
+28-Jul 08:51:44:DEBUG:root:Saving parameters for layer out
+28-Jul 08:51:59:INFO:root:ITER = 010100:: TRAIN obj-val = 0.03020874
+28-Jul 08:52:15:INFO:root:ITER = 010200:: TRAIN obj-val = 0.05378480
+28-Jul 08:52:22:INFO:root:
+28-Jul 08:52:22:INFO:root:## Performance on Validation Set after 10200 iterations
+28-Jul 08:52:22:INFO:root:---------------------------------------------------------
+28-Jul 08:52:22:INFO:root:  Accuracy (avg over 10000) = 98.5100%
+28-Jul 08:52:22:INFO:root:---------------------------------------------------------
+28-Jul 08:52:22:INFO:root:
+28-Jul 08:52:37:INFO:root:ITER = 010300:: TRAIN obj-val = 0.03336098
+28-Jul 08:52:53:INFO:root:ITER = 010400:: TRAIN obj-val = 0.01413797
+28-Jul 08:53:08:INFO:root:ITER = 010500:: TRAIN obj-val = 0.16033444
+28-Jul 08:53:24:INFO:root:ITER = 010600:: TRAIN obj-val = 0.03636351
+28-Jul 08:53:39:INFO:root:ITER = 010700:: TRAIN obj-val = 0.05407663
+28-Jul 08:53:55:INFO:root:ITER = 010800:: TRAIN obj-val = 0.08985075
+28-Jul 08:54:02:INFO:root:
+28-Jul 08:54:02:INFO:root:## Performance on Validation Set after 10800 iterations
+28-Jul 08:54:02:INFO:root:---------------------------------------------------------
+28-Jul 08:54:02:INFO:root:  Accuracy (avg over 10000) = 98.3900%
+28-Jul 08:54:02:INFO:root:---------------------------------------------------------
+28-Jul 08:54:02:INFO:root:
+28-Jul 08:54:17:INFO:root:ITER = 010900:: TRAIN obj-val = 0.02617342
+28-Jul 08:54:33:INFO:root:ITER = 011000:: TRAIN obj-val = 0.03833259
+28-Jul 08:54:49:INFO:root:ITER = 011100:: TRAIN obj-val = 0.07741744
+28-Jul 08:55:04:INFO:root:ITER = 011200:: TRAIN obj-val = 0.07159224
+28-Jul 08:55:20:INFO:root:ITER = 011300:: TRAIN obj-val = 0.05822995
+28-Jul 08:55:35:INFO:root:ITER = 011400:: TRAIN obj-val = 0.08649635
+28-Jul 08:55:42:INFO:root:
+28-Jul 08:55:42:INFO:root:## Performance on Validation Set after 11400 iterations
+28-Jul 08:55:42:INFO:root:---------------------------------------------------------
+28-Jul 08:55:42:INFO:root:  Accuracy (avg over 10000) = 98.5100%
+28-Jul 08:55:42:INFO:root:---------------------------------------------------------
+28-Jul 08:55:42:INFO:root:
+28-Jul 08:55:58:INFO:root:ITER = 011500:: TRAIN obj-val = 0.06319700
+28-Jul 08:56:13:INFO:root:ITER = 011600:: TRAIN obj-val = 0.03457975
+28-Jul 08:56:29:INFO:root:ITER = 011700:: TRAIN obj-val = 0.10552735
+28-Jul 08:56:44:INFO:root:ITER = 011800:: TRAIN obj-val = 0.11630351
+28-Jul 08:57:00:INFO:root:ITER = 011900:: TRAIN obj-val = 0.02584728
+28-Jul 08:57:16:INFO:root:ITER = 012000:: TRAIN obj-val = 0.04466009
+28-Jul 08:57:23:INFO:root:
+28-Jul 08:57:23:INFO:root:## Performance on Validation Set after 12000 iterations
+28-Jul 08:57:23:INFO:root:---------------------------------------------------------
+28-Jul 08:57:23:INFO:root:  Accuracy (avg over 10000) = 98.5100%
+28-Jul 08:57:23:INFO:root:---------------------------------------------------------
+28-Jul 08:57:23:INFO:root:
+28-Jul 08:57:38:INFO:root:ITER = 012100:: TRAIN obj-val = 0.00985097
+28-Jul 08:57:54:INFO:root:ITER = 012200:: TRAIN obj-val = 0.03074644
+28-Jul 08:58:09:INFO:root:ITER = 012300:: TRAIN obj-val = 0.04936554
+28-Jul 08:58:25:INFO:root:ITER = 012400:: TRAIN obj-val = 0.06000023
+28-Jul 08:58:40:INFO:root:ITER = 012500:: TRAIN obj-val = 0.02369362
+28-Jul 08:58:56:INFO:root:ITER = 012600:: TRAIN obj-val = 0.05653646
+28-Jul 08:59:03:INFO:root:
+28-Jul 08:59:03:INFO:root:## Performance on Validation Set after 12600 iterations
+28-Jul 08:59:03:INFO:root:---------------------------------------------------------
+28-Jul 08:59:03:INFO:root:  Accuracy (avg over 10000) = 98.4900%
+28-Jul 08:59:03:INFO:root:---------------------------------------------------------
+28-Jul 08:59:03:INFO:root:
+28-Jul 08:59:19:INFO:root:ITER = 012700:: TRAIN obj-val = 0.04763143
+28-Jul 08:59:34:INFO:root:ITER = 012800:: TRAIN obj-val = 0.00769908
+28-Jul 08:59:50:INFO:root:ITER = 012900:: TRAIN obj-val = 0.04686319
+28-Jul 09:00:06:INFO:root:ITER = 013000:: TRAIN obj-val = 0.01809031
+28-Jul 09:00:21:INFO:root:ITER = 013100:: TRAIN obj-val = 0.02465447
+28-Jul 09:00:37:INFO:root:ITER = 013200:: TRAIN obj-val = 0.05885753
+28-Jul 09:00:44:INFO:root:
+28-Jul 09:00:44:INFO:root:## Performance on Validation Set after 13200 iterations
+28-Jul 09:00:44:INFO:root:---------------------------------------------------------
+28-Jul 09:00:44:INFO:root:  Accuracy (avg over 10000) = 98.5700%
+28-Jul 09:00:44:INFO:root:---------------------------------------------------------
+28-Jul 09:00:44:INFO:root:
+28-Jul 09:00:59:INFO:root:ITER = 013300:: TRAIN obj-val = 0.01873444
+28-Jul 09:01:15:INFO:root:ITER = 013400:: TRAIN obj-val = 0.03340717
+28-Jul 09:01:31:INFO:root:ITER = 013500:: TRAIN obj-val = 0.14944962
+28-Jul 09:01:46:INFO:root:ITER = 013600:: TRAIN obj-val = 0.04185177
+28-Jul 09:02:02:INFO:root:ITER = 013700:: TRAIN obj-val = 0.01691510
+28-Jul 09:02:17:INFO:root:ITER = 013800:: TRAIN obj-val = 0.07498335
+28-Jul 09:02:24:INFO:root:
+28-Jul 09:02:24:INFO:root:## Performance on Validation Set after 13800 iterations
+28-Jul 09:02:24:INFO:root:---------------------------------------------------------
+28-Jul 09:02:24:INFO:root:  Accuracy (avg over 10000) = 98.6300%
+28-Jul 09:02:24:INFO:root:---------------------------------------------------------
+28-Jul 09:02:24:INFO:root:
+28-Jul 09:02:40:INFO:root:ITER = 013900:: TRAIN obj-val = 0.04050284
+28-Jul 09:02:56:INFO:root:ITER = 014000:: TRAIN obj-val = 0.01547994
+28-Jul 09:03:14:INFO:root:ITER = 014100:: TRAIN obj-val = 0.08564674
+28-Jul 09:03:36:INFO:root:ITER = 014200:: TRAIN obj-val = 0.01594436
+28-Jul 09:03:59:INFO:root:ITER = 014300:: TRAIN obj-val = 0.02143195
+28-Jul 09:04:20:INFO:root:ITER = 014400:: TRAIN obj-val = 0.03448605
+28-Jul 09:04:29:INFO:root:
+28-Jul 09:04:29:INFO:root:## Performance on Validation Set after 14400 iterations
+28-Jul 09:04:29:INFO:root:---------------------------------------------------------
+28-Jul 09:04:29:INFO:root:  Accuracy (avg over 10000) = 98.5300%
+28-Jul 09:04:29:INFO:root:---------------------------------------------------------
+28-Jul 09:04:29:INFO:root:
+28-Jul 09:04:51:INFO:root:ITER = 014500:: TRAIN obj-val = 0.07081333
+28-Jul 09:05:07:INFO:root:ITER = 014600:: TRAIN obj-val = 0.01008549
+28-Jul 09:05:22:INFO:root:ITER = 014700:: TRAIN obj-val = 0.05160752
+28-Jul 09:05:38:INFO:root:ITER = 014800:: TRAIN obj-val = 0.06198040
+28-Jul 09:05:53:INFO:root:ITER = 014900:: TRAIN obj-val = 0.02389673
+28-Jul 09:06:09:INFO:root:ITER = 015000:: TRAIN obj-val = 0.06591046
+28-Jul 09:06:09:INFO:root:Saving snapshot to snapshot-015000.jld...
+28-Jul 09:06:09:DEBUG:root:Saving parameters for layer fc1
+28-Jul 09:06:09:DEBUG:root:Saving parameters for layer fc2
+28-Jul 09:06:09:DEBUG:root:Saving parameters for layer out
+28-Jul 09:06:16:INFO:root:
+28-Jul 09:06:16:INFO:root:## Performance on Validation Set after 15000 iterations
+28-Jul 09:06:16:INFO:root:---------------------------------------------------------
+28-Jul 09:06:16:INFO:root:  Accuracy (avg over 10000) = 98.5000%
+28-Jul 09:06:16:INFO:root:---------------------------------------------------------
+28-Jul 09:06:16:INFO:root:
+28-Jul 09:06:31:INFO:root:ITER = 015100:: TRAIN obj-val = 0.01184753
+28-Jul 09:06:47:INFO:root:ITER = 015200:: TRAIN obj-val = 0.01957449
+28-Jul 09:07:02:INFO:root:ITER = 015300:: TRAIN obj-val = 0.07349257
+28-Jul 09:07:18:INFO:root:ITER = 015400:: TRAIN obj-val = 0.01496444
+28-Jul 09:07:33:INFO:root:ITER = 015500:: TRAIN obj-val = 0.04116670
+28-Jul 09:07:49:INFO:root:ITER = 015600:: TRAIN obj-val = 0.04840907
+28-Jul 09:07:56:INFO:root:
+28-Jul 09:07:56:INFO:root:## Performance on Validation Set after 15600 iterations
+28-Jul 09:07:56:INFO:root:---------------------------------------------------------
+28-Jul 09:07:56:INFO:root:  Accuracy (avg over 10000) = 98.4700%
+28-Jul 09:07:56:INFO:root:---------------------------------------------------------
+28-Jul 09:07:56:INFO:root:
+28-Jul 09:08:11:INFO:root:ITER = 015700:: TRAIN obj-val = 0.01612630
+28-Jul 09:08:27:INFO:root:ITER = 015800:: TRAIN obj-val = 0.06594457
+28-Jul 09:08:42:INFO:root:ITER = 015900:: TRAIN obj-val = 0.05148211
+28-Jul 09:08:57:INFO:root:ITER = 016000:: TRAIN obj-val = 0.01289108
+28-Jul 09:09:12:INFO:root:ITER = 016100:: TRAIN obj-val = 0.02438207
+28-Jul 09:09:27:INFO:root:ITER = 016200:: TRAIN obj-val = 0.03195489
+28-Jul 09:09:34:INFO:root:
+28-Jul 09:09:34:INFO:root:## Performance on Validation Set after 16200 iterations
+28-Jul 09:09:34:INFO:root:---------------------------------------------------------
+28-Jul 09:09:34:INFO:root:  Accuracy (avg over 10000) = 98.6500%
+28-Jul 09:09:34:INFO:root:---------------------------------------------------------
+28-Jul 09:09:34:INFO:root:
+28-Jul 09:09:49:INFO:root:ITER = 016300:: TRAIN obj-val = 0.05680963
+28-Jul 09:10:05:INFO:root:ITER = 016400:: TRAIN obj-val = 0.00321564
+28-Jul 09:10:20:INFO:root:ITER = 016500:: TRAIN obj-val = 0.02904547
+28-Jul 09:10:36:INFO:root:ITER = 016600:: TRAIN obj-val = 0.05259551
+28-Jul 09:10:51:INFO:root:ITER = 016700:: TRAIN obj-val = 0.00595440
+28-Jul 09:11:06:INFO:root:ITER = 016800:: TRAIN obj-val = 0.07776690
+28-Jul 09:11:13:INFO:root:
+28-Jul 09:11:13:INFO:root:## Performance on Validation Set after 16800 iterations
+28-Jul 09:11:13:INFO:root:---------------------------------------------------------
+28-Jul 09:11:13:INFO:root:  Accuracy (avg over 10000) = 98.5700%
+28-Jul 09:11:13:INFO:root:---------------------------------------------------------
+28-Jul 09:11:13:INFO:root:
+28-Jul 09:11:28:INFO:root:ITER = 016900:: TRAIN obj-val = 0.01070634
+28-Jul 09:11:43:INFO:root:ITER = 017000:: TRAIN obj-val = 0.02205896
+28-Jul 09:11:59:INFO:root:ITER = 017100:: TRAIN obj-val = 0.05150931
+28-Jul 09:12:14:INFO:root:ITER = 017200:: TRAIN obj-val = 0.00759964
+28-Jul 09:12:29:INFO:root:ITER = 017300:: TRAIN obj-val = 0.02442940
+28-Jul 09:12:44:INFO:root:ITER = 017400:: TRAIN obj-val = 0.05350315
+28-Jul 09:12:50:INFO:root:
+28-Jul 09:12:50:INFO:root:## Performance on Validation Set after 17400 iterations
+28-Jul 09:12:50:INFO:root:---------------------------------------------------------
+28-Jul 09:12:50:INFO:root:  Accuracy (avg over 10000) = 98.6400%
+28-Jul 09:12:50:INFO:root:---------------------------------------------------------
+28-Jul 09:12:50:INFO:root:
+28-Jul 09:13:06:INFO:root:ITER = 017500:: TRAIN obj-val = 0.06373450
+28-Jul 09:13:21:INFO:root:ITER = 017600:: TRAIN obj-val = 0.01268726
+28-Jul 09:13:37:INFO:root:ITER = 017700:: TRAIN obj-val = 0.03063978
+28-Jul 09:13:52:INFO:root:ITER = 017800:: TRAIN obj-val = 0.02839898
+28-Jul 09:14:08:INFO:root:ITER = 017900:: TRAIN obj-val = 0.00882720
+28-Jul 09:14:23:INFO:root:ITER = 018000:: TRAIN obj-val = 0.02711837
+28-Jul 09:14:30:INFO:root:
+28-Jul 09:14:30:INFO:root:## Performance on Validation Set after 18000 iterations
+28-Jul 09:14:30:INFO:root:---------------------------------------------------------
+28-Jul 09:14:30:INFO:root:  Accuracy (avg over 10000) = 98.5900%
+28-Jul 09:14:30:INFO:root:---------------------------------------------------------
+28-Jul 09:14:30:INFO:root:
+28-Jul 09:14:46:INFO:root:ITER = 018100:: TRAIN obj-val = 0.01257971
+28-Jul 09:15:01:INFO:root:ITER = 018200:: TRAIN obj-val = 0.00599602
+28-Jul 09:15:17:INFO:root:ITER = 018300:: TRAIN obj-val = 0.09575953
+28-Jul 09:15:32:INFO:root:ITER = 018400:: TRAIN obj-val = 0.04861302
+28-Jul 09:15:48:INFO:root:ITER = 018500:: TRAIN obj-val = 0.00894179
+28-Jul 09:16:03:INFO:root:ITER = 018600:: TRAIN obj-val = 0.08213127
+28-Jul 09:16:10:INFO:root:
+28-Jul 09:16:10:INFO:root:## Performance on Validation Set after 18600 iterations
+28-Jul 09:16:10:INFO:root:---------------------------------------------------------
+28-Jul 09:16:10:INFO:root:  Accuracy (avg over 10000) = 98.6100%
+28-Jul 09:16:10:INFO:root:---------------------------------------------------------
+28-Jul 09:16:10:INFO:root:
+28-Jul 09:16:26:INFO:root:ITER = 018700:: TRAIN obj-val = 0.02015905
+28-Jul 09:16:41:INFO:root:ITER = 018800:: TRAIN obj-val = 0.00631854
+28-Jul 09:16:57:INFO:root:ITER = 018900:: TRAIN obj-val = 0.14766641
+28-Jul 09:17:12:INFO:root:ITER = 019000:: TRAIN obj-val = 0.07369260
+28-Jul 09:17:28:INFO:root:ITER = 019100:: TRAIN obj-val = 0.02424034
+28-Jul 09:17:43:INFO:root:ITER = 019200:: TRAIN obj-val = 0.05270204
+28-Jul 09:17:50:INFO:root:
+28-Jul 09:17:50:INFO:root:## Performance on Validation Set after 19200 iterations
+28-Jul 09:17:50:INFO:root:---------------------------------------------------------
+28-Jul 09:17:50:INFO:root:  Accuracy (avg over 10000) = 98.5600%
+28-Jul 09:17:50:INFO:root:---------------------------------------------------------
+28-Jul 09:17:50:INFO:root:
+28-Jul 09:18:06:INFO:root:ITER = 019300:: TRAIN obj-val = 0.00901286
+28-Jul 09:18:21:INFO:root:ITER = 019400:: TRAIN obj-val = 0.03201133
+28-Jul 09:18:37:INFO:root:ITER = 019500:: TRAIN obj-val = 0.09959062
+28-Jul 09:18:52:INFO:root:ITER = 019600:: TRAIN obj-val = 0.02894729
+28-Jul 09:19:08:INFO:root:ITER = 019700:: TRAIN obj-val = 0.07980771
+28-Jul 09:19:24:INFO:root:ITER = 019800:: TRAIN obj-val = 0.03825782
+28-Jul 09:19:31:INFO:root:
+28-Jul 09:19:31:INFO:root:## Performance on Validation Set after 19800 iterations
+28-Jul 09:19:31:INFO:root:---------------------------------------------------------
+28-Jul 09:19:31:INFO:root:  Accuracy (avg over 10000) = 98.5800%
+28-Jul 09:19:31:INFO:root:---------------------------------------------------------
+28-Jul 09:19:31:INFO:root:
+28-Jul 09:19:46:INFO:root:ITER = 019900:: TRAIN obj-val = 0.00140994
+28-Jul 09:20:02:INFO:root:ITER = 020000:: TRAIN obj-val = 0.03203444
+28-Jul 09:20:02:INFO:root:Saving snapshot to snapshot-020000.jld...
+28-Jul 09:20:02:DEBUG:root:Saving parameters for layer fc1
+28-Jul 09:20:02:DEBUG:root:Saving parameters for layer fc2
+28-Jul 09:20:02:DEBUG:root:Saving parameters for layer out
+28-Jul 09:20:17:INFO:root:ITER = 020100:: TRAIN obj-val = 0.04036753
+28-Jul 09:20:33:INFO:root:ITER = 020200:: TRAIN obj-val = 0.03134545
+28-Jul 09:20:48:INFO:root:ITER = 020300:: TRAIN obj-val = 0.02321547
+28-Jul 09:21:04:INFO:root:ITER = 020400:: TRAIN obj-val = 0.02870098
+28-Jul 09:21:11:INFO:root:
+28-Jul 09:21:11:INFO:root:## Performance on Validation Set after 20400 iterations
+28-Jul 09:21:11:INFO:root:---------------------------------------------------------
+28-Jul 09:21:11:INFO:root:  Accuracy (avg over 10000) = 98.6600%
+28-Jul 09:21:11:INFO:root:---------------------------------------------------------
+28-Jul 09:21:11:INFO:root:
+28-Jul 09:21:26:INFO:root:ITER = 020500:: TRAIN obj-val = 0.01403064
+28-Jul 09:21:42:INFO:root:ITER = 020600:: TRAIN obj-val = 0.00414649
+28-Jul 09:21:57:INFO:root:ITER = 020700:: TRAIN obj-val = 0.04214591
+28-Jul 09:22:13:INFO:root:ITER = 020800:: TRAIN obj-val = 0.02788253
+28-Jul 09:22:28:INFO:root:ITER = 020900:: TRAIN obj-val = 0.00555679
+28-Jul 09:22:43:INFO:root:ITER = 021000:: TRAIN obj-val = 0.06788849
+28-Jul 09:22:50:INFO:root:
+28-Jul 09:22:50:INFO:root:## Performance on Validation Set after 21000 iterations
+28-Jul 09:22:50:INFO:root:---------------------------------------------------------
+28-Jul 09:22:50:INFO:root:  Accuracy (avg over 10000) = 98.7100%
+28-Jul 09:22:50:INFO:root:---------------------------------------------------------
+28-Jul 09:22:50:INFO:root:
+28-Jul 09:23:06:INFO:root:ITER = 021100:: TRAIN obj-val = 0.01934597
+28-Jul 09:23:21:INFO:root:ITER = 021200:: TRAIN obj-val = 0.05451781
+28-Jul 09:23:37:INFO:root:ITER = 021300:: TRAIN obj-val = 0.07308821
+28-Jul 09:23:53:INFO:root:ITER = 021400:: TRAIN obj-val = 0.07642987
+28-Jul 09:24:08:INFO:root:ITER = 021500:: TRAIN obj-val = 0.01307655
+28-Jul 09:24:24:INFO:root:ITER = 021600:: TRAIN obj-val = 0.06246132
+28-Jul 09:24:31:INFO:root:
+28-Jul 09:24:31:INFO:root:## Performance on Validation Set after 21600 iterations
+28-Jul 09:24:31:INFO:root:---------------------------------------------------------
+28-Jul 09:24:31:INFO:root:  Accuracy (avg over 10000) = 98.6300%
+28-Jul 09:24:31:INFO:root:---------------------------------------------------------
+28-Jul 09:24:31:INFO:root:
+28-Jul 09:24:46:INFO:root:ITER = 021700:: TRAIN obj-val = 0.00460868
+28-Jul 09:25:02:INFO:root:ITER = 021800:: TRAIN obj-val = 0.02419649
+28-Jul 09:25:17:INFO:root:ITER = 021900:: TRAIN obj-val = 0.06640381
+28-Jul 09:25:33:INFO:root:ITER = 022000:: TRAIN obj-val = 0.00329100
+28-Jul 09:25:48:INFO:root:ITER = 022100:: TRAIN obj-val = 0.08271529
+28-Jul 09:26:04:INFO:root:ITER = 022200:: TRAIN obj-val = 0.05139124
+28-Jul 09:26:11:INFO:root:
+28-Jul 09:26:11:INFO:root:## Performance on Validation Set after 22200 iterations
+28-Jul 09:26:11:INFO:root:---------------------------------------------------------
+28-Jul 09:26:11:INFO:root:  Accuracy (avg over 10000) = 98.7800%
+28-Jul 09:26:11:INFO:root:---------------------------------------------------------
+28-Jul 09:26:11:INFO:root:
+28-Jul 09:26:26:INFO:root:ITER = 022300:: TRAIN obj-val = 0.01126184
+28-Jul 09:26:42:INFO:root:ITER = 022400:: TRAIN obj-val = 0.02786198
+28-Jul 09:26:57:INFO:root:ITER = 022500:: TRAIN obj-val = 0.04378031
+28-Jul 09:27:13:INFO:root:ITER = 022600:: TRAIN obj-val = 0.05989158
+28-Jul 09:27:29:INFO:root:ITER = 022700:: TRAIN obj-val = 0.01424614
+28-Jul 09:27:44:INFO:root:ITER = 022800:: TRAIN obj-val = 0.02404699
+28-Jul 09:27:51:INFO:root:
+28-Jul 09:27:51:INFO:root:## Performance on Validation Set after 22800 iterations
+28-Jul 09:27:51:INFO:root:---------------------------------------------------------
+28-Jul 09:27:51:INFO:root:  Accuracy (avg over 10000) = 98.7000%
+28-Jul 09:27:51:INFO:root:---------------------------------------------------------
+28-Jul 09:27:51:INFO:root:
+28-Jul 09:28:07:INFO:root:ITER = 022900:: TRAIN obj-val = 0.04061905
+28-Jul 09:28:22:INFO:root:ITER = 023000:: TRAIN obj-val = 0.03975174
+28-Jul 09:28:38:INFO:root:ITER = 023100:: TRAIN obj-val = 0.08161631
+28-Jul 09:28:53:INFO:root:ITER = 023200:: TRAIN obj-val = 0.03776615
+28-Jul 09:29:09:INFO:root:ITER = 023300:: TRAIN obj-val = 0.03307460
+28-Jul 09:29:24:INFO:root:ITER = 023400:: TRAIN obj-val = 0.01219254
+28-Jul 09:29:31:INFO:root:
+28-Jul 09:29:31:INFO:root:## Performance on Validation Set after 23400 iterations
+28-Jul 09:29:31:INFO:root:---------------------------------------------------------
+28-Jul 09:29:31:INFO:root:  Accuracy (avg over 10000) = 98.6300%
+28-Jul 09:29:31:INFO:root:---------------------------------------------------------
+28-Jul 09:29:31:INFO:root:
+28-Jul 09:29:47:INFO:root:ITER = 023500:: TRAIN obj-val = 0.00743912
+28-Jul 09:30:02:INFO:root:ITER = 023600:: TRAIN obj-val = 0.00596965
+28-Jul 09:30:18:INFO:root:ITER = 023700:: TRAIN obj-val = 0.08604811
+28-Jul 09:30:33:INFO:root:ITER = 023800:: TRAIN obj-val = 0.01848506
+28-Jul 09:30:49:INFO:root:ITER = 023900:: TRAIN obj-val = 0.03756537
+28-Jul 09:31:04:INFO:root:ITER = 024000:: TRAIN obj-val = 0.09279916
+28-Jul 09:31:11:INFO:root:
+28-Jul 09:31:11:INFO:root:## Performance on Validation Set after 24000 iterations
+28-Jul 09:31:11:INFO:root:---------------------------------------------------------
+28-Jul 09:31:11:INFO:root:  Accuracy (avg over 10000) = 98.7300%
+28-Jul 09:31:11:INFO:root:---------------------------------------------------------
+28-Jul 09:31:11:INFO:root:
+28-Jul 09:31:27:INFO:root:ITER = 024100:: TRAIN obj-val = 0.04274222
+28-Jul 09:31:42:INFO:root:ITER = 024200:: TRAIN obj-val = 0.02376418
+28-Jul 09:31:58:INFO:root:ITER = 024300:: TRAIN obj-val = 0.03704211
+28-Jul 09:32:13:INFO:root:ITER = 024400:: TRAIN obj-val = 0.04267248
+28-Jul 09:32:29:INFO:root:ITER = 024500:: TRAIN obj-val = 0.02629036
+28-Jul 09:32:44:INFO:root:ITER = 024600:: TRAIN obj-val = 0.06128119
+28-Jul 09:32:51:INFO:root:
+28-Jul 09:32:51:INFO:root:## Performance on Validation Set after 24600 iterations
+28-Jul 09:32:51:INFO:root:---------------------------------------------------------
+28-Jul 09:32:51:INFO:root:  Accuracy (avg over 10000) = 98.7800%
+28-Jul 09:32:51:INFO:root:---------------------------------------------------------
+28-Jul 09:32:51:INFO:root:
+28-Jul 09:33:07:INFO:root:ITER = 024700:: TRAIN obj-val = 0.03063396
+28-Jul 09:33:22:INFO:root:ITER = 024800:: TRAIN obj-val = 0.02453879
+28-Jul 09:33:38:INFO:root:ITER = 024900:: TRAIN obj-val = 0.07317188
+28-Jul 09:33:53:INFO:root:ITER = 025000:: TRAIN obj-val = 0.06699228
+28-Jul 09:33:53:INFO:root:Saving snapshot to snapshot-025000.jld...
+28-Jul 09:33:53:DEBUG:root:Saving parameters for layer fc1
+28-Jul 09:33:53:DEBUG:root:Saving parameters for layer fc2
+28-Jul 09:33:53:DEBUG:root:Saving parameters for layer out
+28-Jul 09:34:09:INFO:root:ITER = 025100:: TRAIN obj-val = 0.01534301
+28-Jul 09:34:24:INFO:root:ITER = 025200:: TRAIN obj-val = 0.02570784
+28-Jul 09:34:31:INFO:root:
+28-Jul 09:34:31:INFO:root:## Performance on Validation Set after 25200 iterations
+28-Jul 09:34:31:INFO:root:---------------------------------------------------------
+28-Jul 09:34:31:INFO:root:  Accuracy (avg over 10000) = 98.7100%
+28-Jul 09:34:31:INFO:root:---------------------------------------------------------
+28-Jul 09:34:31:INFO:root:
+28-Jul 09:34:47:INFO:root:ITER = 025300:: TRAIN obj-val = 0.01164403
+28-Jul 09:35:02:INFO:root:ITER = 025400:: TRAIN obj-val = 0.00451223
+28-Jul 09:35:18:INFO:root:ITER = 025500:: TRAIN obj-val = 0.04244262
+28-Jul 09:35:33:INFO:root:ITER = 025600:: TRAIN obj-val = 0.00867590
+28-Jul 09:35:49:INFO:root:ITER = 025700:: TRAIN obj-val = 0.01142460
+28-Jul 09:36:04:INFO:root:ITER = 025800:: TRAIN obj-val = 0.04848622
+28-Jul 09:36:11:INFO:root:
+28-Jul 09:36:11:INFO:root:## Performance on Validation Set after 25800 iterations
+28-Jul 09:36:11:INFO:root:---------------------------------------------------------
+28-Jul 09:36:11:INFO:root:  Accuracy (avg over 10000) = 98.6900%
+28-Jul 09:36:11:INFO:root:---------------------------------------------------------
+28-Jul 09:36:11:INFO:root:
+28-Jul 09:36:27:INFO:root:ITER = 025900:: TRAIN obj-val = 0.01299032
+28-Jul 09:36:43:INFO:root:ITER = 026000:: TRAIN obj-val = 0.02242549
+28-Jul 09:36:59:INFO:root:ITER = 026100:: TRAIN obj-val = 0.03256406
+28-Jul 09:37:15:INFO:root:ITER = 026200:: TRAIN obj-val = 0.01314584
+28-Jul 09:37:31:INFO:root:ITER = 026300:: TRAIN obj-val = 0.00772880
+28-Jul 09:37:47:INFO:root:ITER = 026400:: TRAIN obj-val = 0.02192929
+28-Jul 09:37:53:INFO:root:
+28-Jul 09:37:53:INFO:root:## Performance on Validation Set after 26400 iterations
+28-Jul 09:37:53:INFO:root:---------------------------------------------------------
+28-Jul 09:37:53:INFO:root:  Accuracy (avg over 10000) = 98.7600%
+28-Jul 09:37:53:INFO:root:---------------------------------------------------------
+28-Jul 09:37:53:INFO:root:
+28-Jul 09:38:09:INFO:root:ITER = 026500:: TRAIN obj-val = 0.00334908
+28-Jul 09:38:25:INFO:root:ITER = 026600:: TRAIN obj-val = 0.02384076
+28-Jul 09:38:40:INFO:root:ITER = 026700:: TRAIN obj-val = 0.04624070
+28-Jul 09:38:56:INFO:root:ITER = 026800:: TRAIN obj-val = 0.05564623
+28-Jul 09:39:11:INFO:root:ITER = 026900:: TRAIN obj-val = 0.00803297
+28-Jul 09:39:27:INFO:root:ITER = 027000:: TRAIN obj-val = 0.04211031
+28-Jul 09:39:34:INFO:root:
+28-Jul 09:39:34:INFO:root:## Performance on Validation Set after 27000 iterations
+28-Jul 09:39:34:INFO:root:---------------------------------------------------------
+28-Jul 09:39:34:INFO:root:  Accuracy (avg over 10000) = 98.7900%
+28-Jul 09:39:34:INFO:root:---------------------------------------------------------
+28-Jul 09:39:34:INFO:root:
+28-Jul 09:39:50:INFO:root:ITER = 027100:: TRAIN obj-val = 0.02137858
+28-Jul 09:40:05:INFO:root:ITER = 027200:: TRAIN obj-val = 0.01149827
+28-Jul 09:40:21:INFO:root:ITER = 027300:: TRAIN obj-val = 0.03646293
+28-Jul 09:40:36:INFO:root:ITER = 027400:: TRAIN obj-val = 0.01791319
+28-Jul 09:40:52:INFO:root:ITER = 027500:: TRAIN obj-val = 0.00558381
+28-Jul 09:41:08:INFO:root:ITER = 027600:: TRAIN obj-val = 0.05528434
+28-Jul 09:41:15:INFO:root:
+28-Jul 09:41:15:INFO:root:## Performance on Validation Set after 27600 iterations
+28-Jul 09:41:15:INFO:root:---------------------------------------------------------
+28-Jul 09:41:15:INFO:root:  Accuracy (avg over 10000) = 98.7300%
+28-Jul 09:41:15:INFO:root:---------------------------------------------------------
+28-Jul 09:41:15:INFO:root:
+28-Jul 09:41:30:INFO:root:ITER = 027700:: TRAIN obj-val = 0.08601188
+28-Jul 09:41:46:INFO:root:ITER = 027800:: TRAIN obj-val = 0.01602705
+28-Jul 09:42:01:INFO:root:ITER = 027900:: TRAIN obj-val = 0.01420729
+28-Jul 09:42:17:INFO:root:ITER = 028000:: TRAIN obj-val = 0.03499706
+28-Jul 09:42:33:INFO:root:ITER = 028100:: TRAIN obj-val = 0.02644465
+28-Jul 09:42:48:INFO:root:ITER = 028200:: TRAIN obj-val = 0.06047718
+28-Jul 09:42:55:INFO:root:
+28-Jul 09:42:55:INFO:root:## Performance on Validation Set after 28200 iterations
+28-Jul 09:42:55:INFO:root:---------------------------------------------------------
+28-Jul 09:42:55:INFO:root:  Accuracy (avg over 10000) = 98.7400%
+28-Jul 09:42:55:INFO:root:---------------------------------------------------------
+28-Jul 09:42:55:INFO:root:
+28-Jul 09:43:11:INFO:root:ITER = 028300:: TRAIN obj-val = 0.00881467
+28-Jul 09:43:26:INFO:root:ITER = 028400:: TRAIN obj-val = 0.05529298
+28-Jul 09:43:42:INFO:root:ITER = 028500:: TRAIN obj-val = 0.02422253
+28-Jul 09:43:59:INFO:root:ITER = 028600:: TRAIN obj-val = 0.14438942
+28-Jul 09:44:21:INFO:root:ITER = 028700:: TRAIN obj-val = 0.00315702
+28-Jul 09:44:41:INFO:root:ITER = 028800:: TRAIN obj-val = 0.01226563
+28-Jul 09:44:48:INFO:root:
+28-Jul 09:44:48:INFO:root:## Performance on Validation Set after 28800 iterations
+28-Jul 09:44:48:INFO:root:---------------------------------------------------------
+28-Jul 09:44:48:INFO:root:  Accuracy (avg over 10000) = 98.7500%
+28-Jul 09:44:48:INFO:root:---------------------------------------------------------
+28-Jul 09:44:48:INFO:root:
+28-Jul 09:45:04:INFO:root:ITER = 028900:: TRAIN obj-val = 0.01583235
+28-Jul 09:45:20:INFO:root:ITER = 029000:: TRAIN obj-val = 0.00453896
+28-Jul 09:45:35:INFO:root:ITER = 029100:: TRAIN obj-val = 0.01170050
+28-Jul 09:45:51:INFO:root:ITER = 029200:: TRAIN obj-val = 0.03376567
+28-Jul 09:46:07:INFO:root:ITER = 029300:: TRAIN obj-val = 0.01025854
+28-Jul 09:46:22:INFO:root:ITER = 029400:: TRAIN obj-val = 0.03596253
+28-Jul 09:46:29:INFO:root:
+28-Jul 09:46:29:INFO:root:## Performance on Validation Set after 29400 iterations
+28-Jul 09:46:29:INFO:root:---------------------------------------------------------
+28-Jul 09:46:29:INFO:root:  Accuracy (avg over 10000) = 98.7400%
+28-Jul 09:46:29:INFO:root:---------------------------------------------------------
+28-Jul 09:46:29:INFO:root:
+28-Jul 09:46:45:INFO:root:ITER = 029500:: TRAIN obj-val = 0.00474061
+28-Jul 09:47:01:INFO:root:ITER = 029600:: TRAIN obj-val = 0.00369805
+28-Jul 09:47:16:INFO:root:ITER = 029700:: TRAIN obj-val = 0.03720741
+28-Jul 09:47:32:INFO:root:ITER = 029800:: TRAIN obj-val = 0.01841265
+28-Jul 09:47:48:INFO:root:ITER = 029900:: TRAIN obj-val = 0.01233320
+28-Jul 09:48:03:INFO:root:ITER = 030000:: TRAIN obj-val = 0.01353352
+28-Jul 09:48:03:INFO:root:Saving snapshot to snapshot-030000.jld...
+28-Jul 09:48:03:DEBUG:root:Saving parameters for layer fc1
+28-Jul 09:48:03:DEBUG:root:Saving parameters for layer fc2
+28-Jul 09:48:03:DEBUG:root:Saving parameters for layer out
+28-Jul 09:48:10:INFO:root:
+28-Jul 09:48:10:INFO:root:## Performance on Validation Set after 30000 iterations
+28-Jul 09:48:10:INFO:root:---------------------------------------------------------
+28-Jul 09:48:10:INFO:root:  Accuracy (avg over 10000) = 98.7200%
+28-Jul 09:48:10:INFO:root:---------------------------------------------------------
+28-Jul 09:48:10:INFO:root:
+28-Jul 09:48:26:INFO:root:ITER = 030100:: TRAIN obj-val = 0.00522950
+28-Jul 09:48:42:INFO:root:ITER = 030200:: TRAIN obj-val = 0.04262003
+28-Jul 09:48:58:INFO:root:ITER = 030300:: TRAIN obj-val = 0.03111980
+28-Jul 09:49:13:INFO:root:ITER = 030400:: TRAIN obj-val = 0.03547520
+28-Jul 09:49:29:INFO:root:ITER = 030500:: TRAIN obj-val = 0.01320598
+28-Jul 09:49:46:INFO:root:ITER = 030600:: TRAIN obj-val = 0.02130354
+28-Jul 09:49:55:INFO:root:
+28-Jul 09:49:55:INFO:root:## Performance on Validation Set after 30600 iterations
+28-Jul 09:49:55:INFO:root:---------------------------------------------------------
+28-Jul 09:49:55:INFO:root:  Accuracy (avg over 10000) = 98.8400%
+28-Jul 09:49:55:INFO:root:---------------------------------------------------------
+28-Jul 09:49:55:INFO:root:
+28-Jul 09:50:17:INFO:root:ITER = 030700:: TRAIN obj-val = 0.02726706
+28-Jul 09:50:39:INFO:root:ITER = 030800:: TRAIN obj-val = 0.06249101
+28-Jul 09:51:01:INFO:root:ITER = 030900:: TRAIN obj-val = 0.02700045
+28-Jul 09:51:23:INFO:root:ITER = 031000:: TRAIN obj-val = 0.02844016
+28-Jul 09:51:44:INFO:root:ITER = 031100:: TRAIN obj-val = 0.00864636
+28-Jul 09:52:06:INFO:root:ITER = 031200:: TRAIN obj-val = 0.00625730
+28-Jul 09:52:15:INFO:root:
+28-Jul 09:52:15:INFO:root:## Performance on Validation Set after 31200 iterations
+28-Jul 09:52:15:INFO:root:---------------------------------------------------------
+28-Jul 09:52:15:INFO:root:  Accuracy (avg over 10000) = 98.7800%
+28-Jul 09:52:15:INFO:root:---------------------------------------------------------
+28-Jul 09:52:15:INFO:root:
+28-Jul 09:52:37:INFO:root:ITER = 031300:: TRAIN obj-val = 0.02235600
+28-Jul 09:52:58:INFO:root:ITER = 031400:: TRAIN obj-val = 0.02197674
+28-Jul 09:53:20:INFO:root:ITER = 031500:: TRAIN obj-val = 0.06121525
+28-Jul 09:53:42:INFO:root:ITER = 031600:: TRAIN obj-val = 0.04035806
+28-Jul 09:54:03:INFO:root:ITER = 031700:: TRAIN obj-val = 0.01881856
+28-Jul 09:54:25:INFO:root:ITER = 031800:: TRAIN obj-val = 0.03167972
+28-Jul 09:54:34:INFO:root:
+28-Jul 09:54:34:INFO:root:## Performance on Validation Set after 31800 iterations
+28-Jul 09:54:34:INFO:root:---------------------------------------------------------
+28-Jul 09:54:34:INFO:root:  Accuracy (avg over 10000) = 98.7300%
+28-Jul 09:54:34:INFO:root:---------------------------------------------------------
+28-Jul 09:54:34:INFO:root:
+28-Jul 09:54:56:INFO:root:ITER = 031900:: TRAIN obj-val = 0.01227032
+28-Jul 09:55:16:INFO:root:ITER = 032000:: TRAIN obj-val = 0.01415548
+28-Jul 09:55:32:INFO:root:ITER = 032100:: TRAIN obj-val = 0.02098440
+28-Jul 09:55:48:INFO:root:ITER = 032200:: TRAIN obj-val = 0.00607313
+28-Jul 09:56:10:INFO:root:ITER = 032300:: TRAIN obj-val = 0.02982900
+28-Jul 09:56:33:INFO:root:ITER = 032400:: TRAIN obj-val = 0.02617036
+28-Jul 09:56:42:INFO:root:
+28-Jul 09:56:42:INFO:root:## Performance on Validation Set after 32400 iterations
+28-Jul 09:56:42:INFO:root:---------------------------------------------------------
+28-Jul 09:56:42:INFO:root:  Accuracy (avg over 10000) = 98.7600%
+28-Jul 09:56:42:INFO:root:---------------------------------------------------------
+28-Jul 09:56:42:INFO:root:
+28-Jul 09:57:04:INFO:root:ITER = 032500:: TRAIN obj-val = 0.00543606
+28-Jul 09:57:26:INFO:root:ITER = 032600:: TRAIN obj-val = 0.01383036
+28-Jul 09:57:49:INFO:root:ITER = 032700:: TRAIN obj-val = 0.01098188

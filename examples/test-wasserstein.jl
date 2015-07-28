@@ -1,4 +1,4 @@
-use_cuda = true
+use_cuda = false
 data_type = Float32
 
 if use_cuda

@@ -1,11 +1,11 @@
-use_gpu = true
+use_gpu = false
 
 if use_gpu
   ENV["MOCHA_USE_CUDA"] = "true"
 else
   ENV["MOCHA_USE_NATIVE_EXT"] = "true"
-  ENV["OMP_NUM_THREADS"] = 1
-  blas_set_num_threads(1)
+  ENV["OMP_NUM_THREADS"] = 65
+  blas_set_num_threads(65)
 end
 
 using Mocha
